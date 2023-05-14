@@ -1,0 +1,39 @@
+1. Git configure
+git config --global user.name "Shashank"
+git config --global user.email "shashankpal92@gmail.com"
+git config --global color.ui auto
+
+git config (this will give various options)
+git config -l (will give list of config)
+To make working directory, cd to learning-git and type git init .
+git status (to check the status of files)
+git add -A (to add all files in all folders)
+git commit -m "initial commit"
+git log (to check commit)
+git show <commit id>
+modify a file and then do git diff to get the difference
+git log
+modify the file and do git diff
+git restore <file name> (will discard the changes)
+
+AMMEND COMMITS
+add body{} to main.css
+git commit -m ""
+git log
+git commit --amend -m "added body{} to main.css" (this will amend the commit message)
+git log
+
+GITHUB
+git remote add origin https://github.com/shashankspal/learning-git.git
+
+git branch (will give which branch currently in)
+git branch -M main (this will rename master to main, check git branch --help for more)
+
+git push -u origin main (this will fail, we need to configure permission of git repo)
+
+after configuring, if there is some issue, refer this link
+https://stackoverflow.com/questions/68775869/message-support-for-password-authentication-was-removed-please-use-a-personal
+
+Personal access token: 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
+use this in place of password
+for username use email id
